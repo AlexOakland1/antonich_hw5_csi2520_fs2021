@@ -11,6 +11,7 @@ app.use(express.urlencoded({ extended: true })); // to parse HTML form data
 // routes
 app.get("/", (req, res) => {
     res.render("index");
+    res.render("my_blog");
 });
 
 // Initialize ejs Middleware
