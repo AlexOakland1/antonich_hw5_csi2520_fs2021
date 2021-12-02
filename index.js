@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 
 // Initialize ejs Middleware
 app.set("view engine", "ejs");
-app.use("/public", express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname, '/../antonich_hw5_csi2520_fs2021'), { maxAge: 86400000 }));
 
 // Setup server ports
 const PORT = process.env.PORT || 3000;
