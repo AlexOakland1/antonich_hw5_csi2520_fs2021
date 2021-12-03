@@ -14,11 +14,13 @@ app.use("/public", express.static(__dirname + "/public"));
 
 // routes
 app.get("/", (req, res) => {
-    res.render("index");
+    res.render("index",);
 });
 
-app.get("/my_blog", (req, res) => {
-    res.render("my_blog");
+app.get("/trivia", (req, res) => {
+    res.render("trivia", {
+        score: 0
+    });
 });
 
 app.get("/my_fun_facts", (req, res) => {
