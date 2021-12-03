@@ -17,6 +17,18 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
+app.get("/my_blog", (req, res) => {
+    res.render("my_blog");
+});
+
+app.get("/my_fun_facts", (req, res) => {
+    res.render("my_fun_facts");
+});
+
+app.get("/my_resume", (req, res) => {
+    res.render("my_resume");
+});
+
 // Setup server ports
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server is running on ${PORT}`));
