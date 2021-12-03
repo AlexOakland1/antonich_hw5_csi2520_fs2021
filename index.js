@@ -31,7 +31,7 @@ app.get("/my_resume", (req, res) => {
     res.render("my_resume");
 });
 
-app.post("/updatescore", (req, res) => {
+app.get("/updatescore", (req, res) => {
     let check = req.body.fav_language;
     res.send(check);
 });
