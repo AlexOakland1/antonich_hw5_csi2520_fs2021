@@ -34,7 +34,6 @@ app.get("/updatescore", (req, res) => {
     if (check == "q1=1") {
         console.log('sus');
     };
-    res.send(check);
 });
 
 // Setup server ports
