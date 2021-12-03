@@ -31,6 +31,11 @@ app.get("/my_resume", (req, res) => {
     res.render("my_resume");
 });
 
+app.post("/updatescore", (req, res) => {
+    let check = req.body.studentName;
+    res.send(check);
+});
+
 // Setup server ports
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server is running on ${PORT}`));

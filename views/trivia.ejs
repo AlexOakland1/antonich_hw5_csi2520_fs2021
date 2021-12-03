@@ -39,18 +39,22 @@
             <article>
                 <div>
                     <p>When was the Atari 2600 released?</p>
-                    <form>
-                        <input type="radio" id="correct" name="atari" value="1977">
+                    <form name="atari">
+                        <input type="radio" id="correct" value="correct">
                         <label for="correct">1977</label><br>
-                        <input type="radio" id="css" name="atari" value="1980">
+                        <input type="radio" id="css" value="1980">
                         <label for="css">1980</label><br>
-                        <input type="radio" id="javascript" name="atari" value="1536">
+                        <input type="radio" id="javascript" value="1536">
                         <label for="javascript">In 1536 and it was powered by steam</label>
                         <br>
-                        <input type="button" onclick="score =+ 1" value="Click Me!"> 
+                        <input type="button" onclick="updatescore()" value="Click Me!"> 
                     </form>
                 </div>
                 <p><%=score%></p>
+            </article>
+
+            <article>
+                <button id="colorButton" class="orange">Change Color</button>
             </article>
         </section>
 
