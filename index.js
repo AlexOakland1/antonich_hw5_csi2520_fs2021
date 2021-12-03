@@ -1,6 +1,5 @@
 const express = require("express");
 const ejs = require("ejs");
-var score = 0;
 
 // Create express app
 const app = express();
