@@ -33,8 +33,9 @@ app.get("/updatescore", (req, res) => {
     let check = req.body.q1;
     if (check == "q1=1") {   
         res.send('<p>some html</p>')
+    }else{
+        res.send('<p>no bueno</p>')
     };
-    res.send('<p>somea html</p>')
 });
 
 // Setup server ports
