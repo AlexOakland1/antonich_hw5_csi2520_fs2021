@@ -31,7 +31,7 @@ app.get("/my_resume", (req, res) => {
 
 app.get("/updatescore", (req, res) => {
     let check = req.body.q1;
-    if (check == "q1") {   
+    if (check == "1") {   
         res.send('<p>some html</p>')
     }else{
         res.send('<p>no bueno</p>')
