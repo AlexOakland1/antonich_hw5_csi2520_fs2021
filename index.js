@@ -32,7 +32,7 @@ app.get("/my_resume", (req, res) => {
 });
 
 app.post("/updatescore", (req, res) => {
-    let check = req.body.studentName;
+    let check = req.body.atari;
     res.send(check);
 });
 
