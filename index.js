@@ -31,10 +31,10 @@ app.get("/my_resume", (req, res) => {
 
 app.get("/updatescore", (req, res) => {
     let check = req.body.q1;
-    if (check == "q1=1") {
-        console.log('sus');
+    if (check == "q1=1") {   
+        res.send('<p>some html</p>')
     };
-    res.log(check);
+    res.send('<p>somea html</p>')
 });
 
 // Setup server ports
