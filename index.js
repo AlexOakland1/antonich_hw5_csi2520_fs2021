@@ -33,7 +33,7 @@ app.get("/my_resume", (req, res) => {
 
 app.post("/updatescore", (req, res) => {
     let check = req.body.studentEmail;
-    res.render(check);
+    res.send(check);
     console.log("do something")
     res.render(`PLEASE do something`);
 });
