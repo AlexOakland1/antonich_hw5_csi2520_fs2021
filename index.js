@@ -34,7 +34,7 @@ app.get("/updatescore", (req, res) => {
     if (check == "1") {   
         res.render('<p>some html</p>')
     }else{
-        res.render('<p><%=check%></p>')
+        console.log(check);
     };
 });
 
