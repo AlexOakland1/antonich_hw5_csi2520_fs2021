@@ -33,9 +33,9 @@ app.get("/my_resume", (req, res) => {
 
 app.post("/updatescore", (req, res) => {
     let check = req.body.studentEmail;
-    res.send(check);
+    res.render(check);
     console.log("do something")
-    res.send(`PLEASE do something`);
+    res.render(`PLEASE do something`);
 });
 
 // Setup server ports
