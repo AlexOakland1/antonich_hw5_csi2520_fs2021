@@ -32,7 +32,7 @@ app.get("/my_resume", (req, res) => {
 });
 
 app.post("/updatescore", (req, res) => {
-    let check = req.body.atari1;
+    let check = req.body.studentNewEmailUpdate;
     res.send(check);
     console.log("do something")
     res.send(`PLEASE do something`);
