@@ -32,7 +32,7 @@ app.get("/my_resume", (req, res) => {
 });
 
 app.get("/updatescore", (req, res) => {
-    let check = req.body.fav_language;
+    let check = req.body.fav_language.value;
     res.send(check);
 });
 
