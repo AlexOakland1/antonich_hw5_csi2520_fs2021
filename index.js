@@ -34,6 +34,7 @@ app.get("/my_resume", (req, res) => {
 app.post("/updatescore", (req, res) => {
     let check = req.body.atari1;
     res.send(req.body.atari1);
+    console.log("do something")
 });
 
 // Setup server ports
