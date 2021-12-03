@@ -1,5 +1,6 @@
 const express = require("express");
 const ejs = require("ejs");
+let score = 0;
 
 // Create express app
 const app = express();
@@ -18,9 +19,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/trivia", (req, res) => {
-    res.render("trivia", {
-        score: 0
-    });
+    res.render("trivia");
 });
 
 app.get("/my_fun_facts", (req, res) => {
