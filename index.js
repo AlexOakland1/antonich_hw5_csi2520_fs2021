@@ -34,7 +34,8 @@ app.get("/my_resume", (req, res) => {
 app.get("/updatescore", (req, res) => {
     let check = req.body.fav_language;
     score =+ 1;
-    res.send(check);
+    console.log(score);
+    res.send(score);
 });
 
 // Setup server ports
