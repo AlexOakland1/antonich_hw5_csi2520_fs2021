@@ -32,29 +32,11 @@
  
         <section>
             <article>
-                <h2>Trivia Game</h2>
-                <p>See how many you can get right. Type the number of the answer you think is right in and press the submit button.</p>
-            </article>
-
-            <article>
-                <div>
-                    <p>Test</p>
-                    <ol>
-                        <li>Coffee</li>
-                        <li>Tea</li>
-                        <li>Milk</li>
-                    </ol> 
-                    <form action="/updatescore" method = "get">
-                        <label for="q1">Answer:</label><br>
-                        <input type="text" id="q1" name="q1"><br>
-                        <input type="submit" value="Submit">
-                      </form>
-                </div>
-                
-            </article>
-
-            <article>
-                <button id="colorButton" class="orange">Change Color</button>
+                <% If (data == 1) { %>
+                    <li> Question 1: Correct </li>
+                <% else {%>
+                    <li> Question 1: False</li>
+                <%}%>
             </article>
         </section>
 
