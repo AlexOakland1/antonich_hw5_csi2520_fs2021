@@ -32,11 +32,13 @@
  
         <section>
             <article>
-                <% If (data == 1) { %>
-                    <li> Question 1: Correct </li>
-                <% else {%>
-                    <li> Question 1: False</li>
-                <%}%>
+                <p>Results</p>
+                <% if(data == 1){ %>
+                <p>Correct</p>
+                <% } else { %>
+                <p>Incorrect</p>
+                <% } %>
+
             </article>
         </section>
 
