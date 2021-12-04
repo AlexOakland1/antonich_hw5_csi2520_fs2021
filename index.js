@@ -35,7 +35,7 @@ app.get("/triviaResult", (req, res) => {
 
 app.post("/updatescore", (req, res) => {
     //let { check } = req.query;
-    let test = req.body.q1;
+    let test = [req.body.q1, req.body.q2];
     //let check = req.get('Content-Type');
     res.render("triviaResult", {data: test});
 });
