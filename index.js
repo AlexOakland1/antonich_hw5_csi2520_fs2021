@@ -35,8 +35,9 @@ app.get("/triviaResult", (req, res) => {
 
 app.get("/updatescore", (req, res) => {
     //let { check } = req.query;
-    let check = req.get('Content-Type');
-    res.render("triviaResult", {data: check})
+    let test = req.body.q1;
+    //let check = req.get('Content-Type');
+    res.render("triviaResult", {data: test});
 });
 
 // Setup server ports
