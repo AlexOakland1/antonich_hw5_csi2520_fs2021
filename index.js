@@ -35,7 +35,7 @@ app.get("/triviaResult", (req, res) => {
 
 app.get("/updatescore", (req, res) => {
     //let { check } = req.query;
-    let check = req.get(text);
+    let check = req.get('Content-Type');
     res.render("triviaResult", {data: check})
 });
 
