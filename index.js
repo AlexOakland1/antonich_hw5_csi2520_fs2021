@@ -29,6 +29,10 @@ app.get("/my_resume", (req, res) => {
     res.render("my_resume");
 });
 
+app.get("/triviaResult", (req, res) => {
+    res.render("triviaResult");
+});
+
 app.get("/updatescore", (req, res) => {
     let check = req.body.q1;
     res.render("triviaResult", {data: check})
