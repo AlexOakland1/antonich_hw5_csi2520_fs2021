@@ -31,10 +31,11 @@ app.get("/my_resume", (req, res) => {
 
 app.get("/updatescore", (req, res) => {
     let check = req.body.q1;
+    res.render("triviaResult", {data: check})
     if (check == "1") {   
         res.render('<p>some html</p>')
     }else{
-        res.render('<p>no bueno</p>')
+        res.render('<p>wrong</p>')
     };
 });
 
