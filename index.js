@@ -33,7 +33,7 @@ app.get("/triviaResult", (req, res) => {
     res.render("triviaResult");
 });
 
-app.get("/updatescore", (req, res) => {
+app.post("/updatescore", (req, res) => {
     //let { check } = req.query;
     let test = req.body.q1;
     //let check = req.get('Content-Type');
