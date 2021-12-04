@@ -35,7 +35,7 @@ app.get("/triviaResult", (req, res) => {
 
 app.get("/updatescore", (req, res) => {
     //let { check } = req.query;
-    let check = req.params;
+    let check = req.get;
     res.render("triviaResult", {data: check})
 });
 
