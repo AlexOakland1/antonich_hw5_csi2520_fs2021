@@ -33,12 +33,41 @@
         <section>
             <article>
                 <p>Results</p>
-                <% if(data == "1"){ %>
-                <p>Correct</p>
-                <% } else { %>
-                <p>Incorrect</p>
+                <% if(data1 == "1"){ %>
+                    <p>1. Correct</p>
+                    <% } else { %>
+                    <p>1. Incorrect</p>
                 <% } %>
-                <p>score: <%= data %></p>
+                <% if(data2 == "1"){ %>
+                    <p>2. Correct</p>
+                    <% } else { %>
+                    <p>2. Incorrect</p>
+                <% } %>
+                <% if(data3 == "1"){ %>
+                    <p>3. Correct</p>
+                    <% } else { %>
+                    <p>3. Incorrect</p>
+                <% } %>
+                <% if(data4 == "1"){ %>
+                    <p>4. Correct</p>
+                    <% } else { %>
+                    <p>4. Incorrect</p>
+                <% } %>
+                <% if(data5 == "1"){ %>
+                    <p>5. Correct</p>
+                    <% } else { %>
+                    <p>5. Incorrect</p>
+                <% } %>
+                <p>Score: <%= score %> / 5</p>
+                <% if(score == "5"){ %>
+                    <p>Great job!</p>
+                    <% } else { %>
+                    <p>Try again...</p>
+                <% } %>
+            </article>
+
+            <article>
+                <button id="colorButton" class="orange">Change Color</button>
             </article>
         </section>
 
